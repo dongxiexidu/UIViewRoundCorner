@@ -10,7 +10,6 @@
 
 import UIKit
 
-///
 /// Show Screen FPS.
 ///
 /// The maximum fps in OSX/iOS Simulator is 60.00.

@@ -11,6 +11,7 @@ import Kingfisher
 
 class DXTestRoundedCell: UITableViewCell {
 
+    // test
     @IBOutlet weak var topImageV: UIImageView!
     @IBOutlet weak var haadImageView: UIImageView!
     @IBOutlet weak var headView: UIView!
@@ -27,7 +28,7 @@ class DXTestRoundedCell: UITableViewCell {
         
         for i in 0..<10 {
             let circle = UIView()
-            circle.layer.isOpaque = true
+//            circle.layer.isOpaque = true
             circle.backgroundColor = UIColor.blue
             circle.frame = CGRect.init(x: 20*i, y: 0, width: 15, height: 15)
            // let color = i % 2 == 0 ? UIColor.white : UIColor.gray

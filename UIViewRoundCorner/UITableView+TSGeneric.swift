@@ -31,7 +31,6 @@ public extension UITableView {
         let name = String(describing: aClass)
         self.register(aClass, forCellReuseIdentifier: name)
     }
-    
     /**
      Reusable Cell
      

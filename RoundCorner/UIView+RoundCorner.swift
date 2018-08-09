@@ -9,8 +9,7 @@
 import UIKit
 
 extension UIView{
-    
-    
+
     /// 设置一个四角圆角
     ///
     /// - Parameters:
@@ -41,7 +40,4 @@ extension UIView{
     func dx_roundCorner(radii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor, borderWidth: CGFloat)  {
         self.layer.dx_roundCorner(cornerRadii: radii, cornerColor: cornerColor, corners: corners, borderColor: borderColor, borderWidth: borderWidth)
     }
-    
-    
-    
 }

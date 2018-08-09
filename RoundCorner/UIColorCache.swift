@@ -14,14 +14,14 @@ class UIColorCache: NSObject {
     var colorImageCache : NSCache<NSString , UIImage>! = NSCache()
     
     static let sharedCache = UIColorCache()
-    private override init() {
-        
-    }
+    private override init() {}
 
+    // 根据key 从缓存中获取图片
     func image(key: NSString) -> UIImage? {
         return colorImageCache.object(forKey: key)
     }
     
+    // 根据key缓存中获取图片
     func setImage(image: UIImage, key: NSString) {
         colorImageCache.setObject(image, forKey: key)
     }
@@ -32,7 +32,6 @@ class UIColorCache: NSObject {
         let cornerStr = String(describing: corners.rawValue)
         if borderColor == nil || borderWidth == nil {
 //            print(color.description)
-//            print(cornerStr)
             return color.description+cornerStr as NSString
         }
         if let borderC = borderColor,borderWidth == nil{
@@ -46,7 +45,6 @@ class UIColorCache: NSObject {
             let borderStr = String.init(describing: borderW)
             return color.description+cornerStr+borderStr+borderC.description as NSString
         }
-        
         return color.description+cornerStr as NSString
     }
     

@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-
         setupFPS()
         return true
     }
@@ -24,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         DispatchQueue.main.async {
             let label = FPSLabel(frame: CGRect(x: Int((self.window!.bounds.width) - 55 - 8), y: Int(kNavBarTotalH), width: 55, height: 20))
-            // 横屏幕有用
             label.autoresizingMask = [.flexibleLeftMargin, .flexibleBottomMargin]
             self.window!.addSubview(label)
         }

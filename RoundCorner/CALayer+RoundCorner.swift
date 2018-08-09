@@ -12,7 +12,6 @@ import Foundation
 fileprivate var maskCornerRaidusImageSet = [UIImage]()
 
 extension CALayer {
-
     /// 设置一个四角圆角
     ///
     /// - Parameters:
@@ -53,7 +52,7 @@ extension CALayer {
         self.addSublayer(cornerRadiusLayer)
 
         if image != nil {
-            print("--------复用")
+           // print("--------复用")
             CATransaction.begin()
             CATransaction.setDisableActions(true)
             cornerRadiusLayer.contents = image!.cgImage
@@ -62,7 +61,7 @@ extension CALayer {
 
             if let image = dx_getCornerRadiusImage(cornerRadii: cornerRadii, cornerColor: cornerColor, corners: corners, borderColor: borderColor, borderWidth: borderWidth) {
                 UIColorCache.sharedCache.setImage(image: image, key: cacheKey)
-                print("生成次数-----")
+               // print("生成次数-----")
                 CATransaction.begin()
                 CATransaction.setDisableActions(true)
                 cornerRadiusLayer.contents = image.cgImage

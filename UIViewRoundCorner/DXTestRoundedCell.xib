@@ -55,14 +55,14 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPE-kL-5Iq">
-                        <rect key="frame" x="94" y="8" width="210" height="15"/>
+                        <rect key="frame" x="96" y="8" width="208" height="15"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="P7y-h5-Pxk"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是测试label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rz1-vm-yrJ">
-                        <rect key="frame" x="94" y="58" width="120" height="20"/>
+                        <rect key="frame" x="96" y="58" width="120" height="20"/>
                         <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="120" id="Eip-qG-LSc"/>
@@ -76,7 +76,7 @@
                 <constraints>
                     <constraint firstItem="Rz1-vm-yrJ" firstAttribute="bottom" secondItem="F3P-1Y-apK" secondAttribute="bottom" id="5ha-QC-U9k"/>
                     <constraint firstItem="EPE-kL-5Iq" firstAttribute="top" secondItem="F3P-1Y-apK" secondAttribute="top" id="8Kl-8s-kn3"/>
-                    <constraint firstItem="EPE-kL-5Iq" firstAttribute="leading" secondItem="F3P-1Y-apK" secondAttribute="trailing" constant="8" id="FT3-kI-z4i"/>
+                    <constraint firstItem="EPE-kL-5Iq" firstAttribute="leading" secondItem="F3P-1Y-apK" secondAttribute="trailing" constant="10" id="FT3-kI-z4i"/>
                     <constraint firstItem="F3P-1Y-apK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ldx-7a-ram"/>
                     <constraint firstItem="F3P-1Y-apK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YaZ-De-Bhu"/>
                     <constraint firstItem="Rz1-vm-yrJ" firstAttribute="leading" secondItem="EPE-kL-5Iq" secondAttribute="leading" id="pxX-8N-WyS"/>

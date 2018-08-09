@@ -9,13 +9,11 @@
 import UIKit
 
 extension UIImage {
-    
     // 提供一个在一个指定的size中绘制图片的便捷方法
     class func dx_image(size: CGSize,drawBlock : ((CGContext)->())? ) -> UIImage? {
         if drawBlock == nil {
             return nil
         }
-        
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         if let context = UIGraphicsGetCurrentContext() {
             drawBlock?(context)
@@ -24,7 +22,6 @@ extension UIImage {
             return image
         }
         return nil
-        
     }
     
     // 绘制方法的具体逻辑，遮罩图片的逻辑是绘制一个矩形，然后在绘制一个相应的圆角矩形，然后填充矩形和圆角矩形的中间部分为父视图的背景色
@@ -60,9 +57,7 @@ extension UIImage {
             context.addPath(borderOutPath.cgPath)
             // 注意要用EOFill方式进行填充而非Fill方式
             context.fillPath(using: CGPathFillRule.evenOdd)
-            
         })
     }
-    
-    
+
 }
