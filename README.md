@@ -44,6 +44,6 @@ headView.dx_roundCorner(radii: CGSize.init(width: 35, height: 35), cornerColor: 
 - **2.如果使用了nib文件,圆角无效,需要设置layer.masksToBounds = true**
 - **3.如果需要显示tableView的选中状态,需要自己处理`setSelected`和`setHighlighted`方法,可以参考`demo`建议使用cell.selectionStyle = .none**
 
-[效果图]()
+![效果图](https://github.com/dongxiexidu/UIViewRoundCorner/blob/master/demo.gif)
 
-声明: 本文参考了Objective-C版本,并在原文上添加了一些属性和功能[XWCornerRadius ](https://www.jianshu.com/p/ddad9e336162)
+声明: 本文参考了wazrx[iOS一个简单的设置圆角不引起性能问题的分类](https://www.jianshu.com/p/ddad9e336162)Objective-C版本,并在原文上进行了改进,原文使用了运行时给分类扩展属性进行的保存[XWCornerRadius ](https://github.com/wazrx/XWCornerRadius)
