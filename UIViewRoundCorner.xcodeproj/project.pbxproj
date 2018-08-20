@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1154B506212AC3F800E15C3D /* RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1154B505212AC3F800E15C3D /* RoundCorner.swift */; };
 		115D4322211A81D800AF3872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4321211A81D800AF3872 /* AppDelegate.swift */; };
 		115D4324211A81D800AF3872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4323211A81D800AF3872 /* ViewController.swift */; };
 		115D4327211A81D800AF3872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D4325211A81D800AF3872 /* Main.storyboard */; };
 		115D4329211A81DC00AF3872 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 115D4328211A81DC00AF3872 /* Assets.xcassets */; };
 		115D432C211A81DC00AF3872 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115D432A211A81DC00AF3872 /* LaunchScreen.storyboard */; };
-		115D4335211A827B00AF3872 /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4334211A827B00AF3872 /* UIView+RoundCorner.swift */; };
 		115D4337211A84A500AF3872 /* CALayer+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D4336211A84A500AF3872 /* CALayer+RoundCorner.swift */; };
 		115D433B211AB95400AF3872 /* UIImage+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D433A211AB95400AF3872 /* UIImage+RoundCorner.swift */; };
 		115D433D211AF44C00AF3872 /* UIColorCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115D433C211AF44C00AF3872 /* UIColorCache.swift */; };
@@ -39,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1154B505212AC3F800E15C3D /* RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCorner.swift; sourceTree = "<group>"; };
 		115D431E211A81D800AF3872 /* UIViewRoundCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIViewRoundCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		115D4321211A81D800AF3872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		115D4323211A81D800AF3872 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +47,6 @@
 		115D4328211A81DC00AF3872 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		115D432B211A81DC00AF3872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		115D432D211A81DC00AF3872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		115D4334211A827B00AF3872 /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
 		115D4336211A84A500AF3872 /* CALayer+RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+RoundCorner.swift"; sourceTree = "<group>"; };
 		115D433A211AB95400AF3872 /* UIImage+RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+RoundCorner.swift"; sourceTree = "<group>"; };
 		115D433C211AF44C00AF3872 /* UIColorCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorCache.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		115D4333211A825B00AF3872 /* RoundCorner */ = {
 			isa = PBXGroup;
 			children = (
-				115D4334211A827B00AF3872 /* UIView+RoundCorner.swift */,
+				1154B505212AC3F800E15C3D /* RoundCorner.swift */,
 				115D4336211A84A500AF3872 /* CALayer+RoundCorner.swift */,
 				115D433A211AB95400AF3872 /* UIImage+RoundCorner.swift */,
 				115D433C211AF44C00AF3872 /* UIColorCache.swift */,
@@ -191,12 +191,12 @@
 				115D4345211B1BCD00AF3872 /* FPSLabel.swift in Sources */,
 				115D4324211A81D800AF3872 /* ViewController.swift in Sources */,
 				115D4337211A84A500AF3872 /* CALayer+RoundCorner.swift in Sources */,
-				115D4335211A827B00AF3872 /* UIView+RoundCorner.swift in Sources */,
 				115D433D211AF44C00AF3872 /* UIColorCache.swift in Sources */,
 				115D4322211A81D800AF3872 /* AppDelegate.swift in Sources */,
 				115D433B211AB95400AF3872 /* UIImage+RoundCorner.swift in Sources */,
 				115D4340211B159800AF3872 /* DXTestRoundedCell.swift in Sources */,
 				115D4343211B1AD500AF3872 /* UITableView+TSGeneric.swift in Sources */,
+				1154B506212AC3F800E15C3D /* RoundCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
