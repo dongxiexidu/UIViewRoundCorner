@@ -11,6 +11,7 @@
 - [x] 使用NSCache,对生成的图片进行了缓存,避免重复生成
 - [x] API非常简洁
 - [x] 基本不掉帧,6s真机测试非常流畅
+- [x] 使用类似kingfisher命名空间
 
 
 
@@ -24,7 +25,7 @@
 ///   - corners: 圆角位置
 ///   - borderColor: 边框颜色
 ///   - borderWidth: 边框线宽
-func dx_roundCorner(radii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor, borderWidth: CGFloat)  {
+func roundCorner(radii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor, borderWidth: CGFloat)  {
     self.layer.dx_roundCorner(cornerRadii: radii, cornerColor: cornerColor, corners: corners, borderColor: borderColor, borderWidth: borderWidth)
 }
 ```
@@ -33,10 +34,10 @@ func dx_roundCorner(radii: CGSize,cornerColor: UIColor, corners: UIRectCorner, b
 ```
 // 注意:非正方形,四角圆形需要用[.topLeft,.topRight, .bottomRight, .bottomLeft]
 // 而不是用UIRectCorner.allCorners
-label.dx_roundCorner(radius: 20/2, cornerColor: UIColor.white,corners: [.topLeft,.topRight, .bottomRight, .bottomLeft])
+label.dx.roundCorner(radius: 20/2, cornerColor: UIColor.white,corners: [.topLeft,.topRight, .bottomRight, .bottomLeft])
 
 // 给UIView
-headView.dx_roundCorner(radii: CGSize.init(width: 35, height: 35), cornerColor: UIColor.white, corners: .allCorners, borderColor: UIColor.red, borderWidth: 2)
+headView.dx.roundCorner(radii: CGSize.init(width: 35, height: 35), cornerColor: UIColor.white, corners: .allCorners, borderColor: UIColor.red, borderWidth: 2)
 ```
 
 ### 注意:
