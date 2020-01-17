@@ -58,7 +58,7 @@ extension RoundCorner where Base: UIView{
     ///   - corners: 圆角位置
     ///   - borderColor: 边框颜色
     ///   - borderWidth: 边框线宽
-    func roundCorner(radii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor, borderWidth: CGFloat)  {
+    public func roundCorner(radii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor, borderWidth: CGFloat)  {
         base.layer.dx_roundCorner(cornerRadii: radii, cornerColor: cornerColor, corners: corners, borderColor: borderColor, borderWidth: borderWidth)
     }
 }

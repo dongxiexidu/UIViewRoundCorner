@@ -8,11 +8,11 @@
   "tvOS" : [
 
   ],
-  "commitish" : "1.0",
+  "commitish" : "9a4d7fdb60432fdf77e5f20e2e57e5a6f42dfba8",
   "iOS" : [
     {
       "name" : "RoundCorner",
-      "hash" : "bd878942dd957e1f3c452956a95075d1ee037f98326f9117769679e15bd43d07",
+      "hash" : "d8f7bacef619b3b4a27332713ae60a9b9aed053ceef7dcf95fbb72c66b0f197b",
       "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
     }
   ]
