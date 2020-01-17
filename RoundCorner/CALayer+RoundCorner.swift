@@ -39,7 +39,7 @@ extension CALayer {
     ///   - corners: 圆角位置
     ///   - borderColor: 边框颜色
     ///   - borderWidth: 边框线宽
-    func dx_roundCorner(cornerRadii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor?, borderWidth: CGFloat)  {
+    public func dx_roundCorner(cornerRadii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor?, borderWidth: CGFloat)  {
         
         // 先从NSCach中拿,拿不到再生成
         let cacheKey = UIColorCache.sharedCache.getImageKey(color: cornerColor, corners: corners, borderWidth: borderWidth, borderColor: borderColor)
@@ -71,7 +71,7 @@ extension CALayer {
     }
     
     
-    func dx_getCornerRadiusImage(cornerRadii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor?, borderWidth: CGFloat) -> UIImage? {
+    public func dx_getCornerRadiusImage(cornerRadii: CGSize,cornerColor: UIColor, corners: UIRectCorner, borderColor: UIColor?, borderWidth: CGFloat) -> UIImage? {
  
         return UIImage.dx_maskRoundCornerRadiusImage(color: cornerColor, cornerRadii: cornerRadii, size: self.bounds.size, corners: corners, borderColor: borderColor, borderWidth: borderWidth)
     }
