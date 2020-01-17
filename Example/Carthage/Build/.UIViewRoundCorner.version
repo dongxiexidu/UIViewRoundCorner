@@ -1,0 +1,19 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "0e1c55b16a76a6fbf400d27ebf49d6e6eba93231",
+  "iOS" : [
+    {
+      "name" : "RoundCorner",
+      "hash" : "c1d87af0800bbb90886640be9f186f58ab1380120c0bf1e701843c1dde760bb9",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

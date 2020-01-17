@@ -13,7 +13,7 @@ public protocol RoundCornerCompatible {
 }
 
 public extension RoundCornerCompatible {
-    public var dx : RoundCorner<Self> {
+    var dx : RoundCorner<Self> {
         get { return RoundCorner(self) }
     }
 }

@@ -1,0 +1,11 @@
+framework module RoundCorner {
+  umbrella header "RoundCorner.h"
+
+  export *
+  module * { export * }
+}
+
+module RoundCorner.Swift {
+    header "RoundCorner-Swift.h"
+    requires objc
+}
